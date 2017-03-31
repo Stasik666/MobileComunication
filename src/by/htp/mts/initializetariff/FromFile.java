@@ -17,8 +17,8 @@ public abstract class FromFile{
 		try {
 			props.load(new FileInputStream(new File(path)));
 			newTariff.setName(props.getProperty("name"));
-			newTariff.setSubscriptionFee(Double.parseDouble(props.getProperty("SubscriptionFee")));
-			newTariff.setInternetTraffic(Integer.parseInt(props.getProperty("InternetTraffic")));
+			newTariff.setSubscriptionFee(Double.parseDouble(props.getProperty("subscriptionFee")));
+			newTariff.setInternetTraffic(Integer.parseInt(props.getProperty("internetTraffic")));
 			newTariff.setLocalCall(Double.parseDouble(props.getProperty("localCall")));
 			newTariff.setOtherNetworkCall(Double.parseDouble(props.getProperty("otherNetworkCall")));
 			newTariff.setNumberOfSubscribers(Integer.parseInt(props.getProperty("numberOfSubscribers")));

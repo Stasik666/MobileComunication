@@ -71,7 +71,8 @@ public class ArrayArchive {
 	public void calculateCustomers(){
 		int sum =0;
 		for(Tariff tariff:list){
-			sum+=tariff.getNumberOfSubscribers();
+			if(tariff!=null){
+			sum+=tariff.getNumberOfSubscribers();}
 		}
 		System.out.println(sum);
 	}
